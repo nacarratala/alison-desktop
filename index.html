@@ -32,8 +32,8 @@
 	                <h4 class="text-light font-weight-bold mb-0">Alison Desktop</h4>
 	            </div>
 	            <div class="menu">
-	                <a href="#t1" class="d-block text-light p-3 border-0"><li class="icon fa fa-shield lead mr-2" id="uno"></li> %.Enable </a>
-	                <a href="#t2" class="d-block text-light p-3 border-0"><li class="icon fa fa-key lead mr-2" id="uno"></li> Certificate keysotre </a>
+	                <a href="#enable_title" class="d-block text-light p-3 border-0"><li class="icon fa fa-shield lead mr-2" id="uno"></li> Enable </a>
+	                <a href="#keystore_title" class="d-block text-light p-3 border-0"><li class="icon fa fa-key lead mr-2" id="uno"></li> Certificate keysotre </a>
 	                <a href="#t3" class="d-block text-light p-3 border-0"><li class="icon fa fa-connectdevelop lead mr-2" id="uno"></li> Connections </a>
 	                <a href="#t4" class="d-block text-light p-3 border-0"><li class="icon fa fa-cog lead mr-2" id="uno"></li> Configuration </a>
 	                <a href="#t5" class="d-block text-light p-3 border-0"><li class="icon fa fa-bolt lead mr-2" id="uno"></li> Pity Martinez </a>
@@ -42,11 +42,9 @@
 	        <!-- Fin sidebar -->  
 
 	  	<div class="w-100">
-
-	    
 	    	<div id="content">
-	    
-	    		<section class="py-3">
+	    		<!-- Start enable title -->
+	    		<section class="py-3" id="enable_title">
 	    			<div class="container">
 	    				<div class="row">
 	    					<div class="col-lg-9">
@@ -56,10 +54,12 @@
 	    				</div>
 	    			</div>
 	    		</section>
+				<!-- End enable title -->
 
+				<!-- Start enable content -->
 	    		<section>
-	    			<div class="container">
-	    				<div>
+	    			<div class="container" id="enable_content">
+	    				<div> <!-- por si quiero hacerlo class card -->
 		    				<div class="row pt-1">
 		    					<div class="col-lg-6 border-bottom">
 		    						Chrome, Microsoft Edge, Opera, Brave, Internet Explorer <br>
@@ -99,6 +99,23 @@
 		    			</div>
 		    		</div>
 	    		</section>
+	    		<!-- End enable content -->
+
+	    		<div class="col-xs-12" style="height:410px;"></div> <!-- blank space -->
+
+				<!-- Start keystore title -->
+	    		<section class="py-3" id="keystore_title">
+	    			<div class="container">
+	    				<div class="row">
+	    					<div class="col-lg-9">
+	    						<h1 class="font-weight-bold mb-0">Certificate KeyStores</h1>
+	    						<p class="lead text-muted border-bottom border-primary">Enable or disable keystores availables on your desktop</p>
+	    						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</section>
+	    		<!-- End keystore title -->
 	    	</div>
 	    </div>
 	</div>
