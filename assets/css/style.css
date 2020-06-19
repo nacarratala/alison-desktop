@@ -6,6 +6,19 @@
     --grey: #efefef;
 }
 
+.my-conteiner{
+    border: 1px solid green
+}
+
+.my-row{
+    border: 3px solid red
+}
+
+.my-col{
+    border: 3px solid blue
+}
+
+
 body {
     overflow: hidden;
     font-family: sans-serif;
@@ -52,26 +65,3 @@ a:hover {
     height: 100vh;
     padding-bottom: 5rem;
 }
-
-.avatar {
-    max-width: 35px;
-}
-
-.btn-search {
-    right: 0;
-}
-
-.stat {
-    border-right: 1px solid var(--grey);
-}
-
-  
-@media (max-width: 768px) {
-    #sidebar-container {
-      display: none;
-    }
-    .stat {
-        border: 0;
-    }
-  }
-  
