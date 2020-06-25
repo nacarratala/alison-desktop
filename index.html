@@ -14,19 +14,20 @@
     <!-- jQuery -->
     <script src="assets/js/jQuery.3.5.1.js"></script>
     <!-- Popper -->
-    <script src="assets/js/Popper.2.4.2.js"></script> 
+    <!-- <script src="assets/js/Popper.2.4.2.js"></script> -->
     <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.js"></script>
+    <!-- <script src="assets/js/bootstrap.js"></script> -->
     <script src="assets/js/bootstrap.bundle.js"></script>
-
     <!-- AI -->
-	<link rel='stylesheet' href='assets/font-awesome-4.7.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='assets/font-awesome-4.7.0/css/font-awesome.css'>
+
+	
     <title>Alison Desktop</title>
 </head>
 
 <body>
 	<div class="d-flex" id="content-wrapper">
-	                            <!-- Sidebar -->
+	        <!-- Sidebar -->
 	        <div id="sidebar-container" class="bg-primary">
 	            <div class="logo">
 	                <h4 class="text-light font-weight-bold mb-0">Alison Desktop</h4>
@@ -34,7 +35,7 @@
 	            <div class="menu">
 	                <a href="#enable_title" class="d-block text-light p-3 border-0"><li class="icon fa fa-shield lead mr-2" id="uno"></li> Enable </a>
 	                <a href="#keystore_title" class="d-block text-light p-3 border-0"><li class="icon fa fa-key lead mr-2" id="uno"></li> Certificate keysotre </a>
-	                <a href="#t3" class="d-block text-light p-3 border-0"><li class="icon fa fa-connectdevelop lead mr-2" id="uno"></li> Connections </a>
+	                <a href="#connection_title" class="d-block text-light p-3 border-0"><li class="icon fa fa-connectdevelop lead mr-2" id="uno"></li> Connections </a>
 	                <a href="#t4" class="d-block text-light p-3 border-0"><li class="icon fa fa-cog lead mr-2" id="uno"></li> Configuration </a>
 	                <a href="#t5" class="d-block text-light p-3 border-0"><li class="icon fa fa-bolt lead mr-2" id="uno"></li> Pity Martinez </a>
 	            </div>
@@ -49,49 +50,55 @@
 	    				<div class="row">
 	    					<div class="col-lg-9">
 	    						<h1 class="font-weight-bold mb-0">Enable Alison Desktop</h1>
-	    						<p class="lead text-muted border-bottom border-primary">You <b>must integrate</b> Alison Desktop into your browsers in order to operate</p>
+	    						<p class="lead text-muted border-bottom border-primary" style="font-size:100000">You <b>must integrate</b> Alison Desktop into your browsers in order to operate</p>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</section>
 				<!-- End enable title -->
+				<div class="col-xs-12" style="height:20px;"></div> <!-- blank space -->
 
 				<!-- Start enable content -->
 	    		<section>
 	    			<div class="container" id="enable_content">
 	    				<div> <!-- por si quiero hacerlo class card -->
 		    				<div class="row pt-1">
+		    					<!-- fila 1 -->
 		    					<div class="col-lg-6 border-bottom">
 		    						Chrome, Microsoft Edge, Opera, Brave, Internet Explorer <br>
 		    						<img src="assets/img/browsers.png">
+		    						<br><br>
 		    					</div>
-		    					<div class="col-lg-1 pt-2 border-bottom">
-			    					<label class="el-switch el-switch-sm">
-		  								<input type="checkbox" id="enable_buton1">
+		    					<div class="col-lg-2 pt-3 border-bottom">
+			    					<label class="el-switch el-switch-sm pull-right">
+		  								<input type="checkbox" id="enable_switch1">
 		  								<span class="el-switch-style"></span>
 									</label>
 		    					</div>
 		    				</div>
-		    				<div class="row pt-4">
+		    				<!-- fila 2 -->
+		    				<div class="row pt-5">
 		    					<div class="col-lg-6 border-bottom"> 
 		    						Mozilla Firefox <br>
 		    						<img src="assets/img/mf.png">
+		    						<br><br>
 		    					</div>
-		    					<div class="col-lg-1 pt-2 border-bottom">
-		    						<label class="el-switch el-switch-sm">
-		  								<input type="checkbox" id="enable_buton2">
+		    					<div class="col-lg-2 pt-3 border-bottom">
+		    						<label class="el-switch el-switch-sm pull-right">
+		  								<input type="checkbox" id="enable_switch2">
 		  								<span class="el-switch-style"></span>
 									</label>
 		    					</div>
 		    				</div>
-		    				<div class="row pt-4">
+		    				<!-- fila 3 -->
+		    				<div class="row pt-5">
 		    					<div class="col-lg-6">
 		    						Include company private integration
 		    					</div>
-		    					<div class="col-lg-1">
-		    						<label class="el-checkbox el-checkbox pl-1">
+		    					<div class="col-lg-2">
+		    						<label class="el-checkbox el-checkbox pull-right">
 									  <span class="margin-r"></span>
-									  <input type="checkbox" id="enable_buton3" checked>
+									  <input type="checkbox" id="enable_checkbox3" checked>
 									  <span class="el-checkbox-style"></span>
 									</label>
 		    					</div>
@@ -110,15 +117,272 @@
 	    					<div class="col-lg-9">
 	    						<h1 class="font-weight-bold mb-0">Certificate KeyStores</h1>
 	    						<p class="lead text-muted border-bottom border-primary">Enable or disable keystores availables on your desktop</p>
-	    						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	    					</div>
 	    				</div>
 	    			</div>
 	    		</section>
 	    		<!-- End keystore title -->
+
+		    	<!-- Start keystore content -->
+		    	<section>
+		    		<!-- Start keystore non scrooleable div -->
+			    	<div class="container">
+			    		<!-- Keystore fila 0 -->
+				    	<div class="row ">
+				    		<div class="col-lg-5 " style="background:#c8c8c8;">
+				    		<!-- Keystore col 0-1 -->
+							<h5><b>Keystore name</b></h5>
+				    		</div>
+				    		<!-- Keystore col 0-2 -->
+				    		<div class="col-lg-3 "  style="background:#c8c8c8;">
+				    			<h5><b>Profiles</b></h5>
+				    		</div>
+				    		<!-- Keystore col 0-3 -->
+				    		<div class="col-lg-2 " style="background:#c8c8c8;">
+				    			<h5><b>Native diver</b></h5>
+				    		</div>
+				    	</div>
+				    
+					</div>
+					<!-- End keystore non scrooleable div -->
+				    
+
+			    	<!-- Start keystore scrolleable div -->
+			   		<div class="container" style="overflow-y:auto; overflow-x: hidden;">
+			   			<!--Keystore fila 1 -->
+				    	<div class="row pt-5">
+				    		<!-- Keystore col 1-1 -->
+				    		<div class="col-lg-5 border-bottom pb-3">	
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Windows CryptoAPI Keystore [WIN-ENH]</span>
+								  	<input type="checkbox" id="keystore_name_checkbox1" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>
+				    		</div>
+				    		<!-- Keystore col 1-2 -->
+				    		<div class="col-lg-3 border-bottom">
+				    			<div class="dropdown">
+								  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="keysotre_dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Dropdown
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="keysotre_dropdown1">
+								    <button class="dropdown-item" type="button">Action</button>
+								    <button class="dropdown-item" type="button">Another action</button>
+								    <button class="dropdown-item" type="button">Something else here</button>
+								  </div>
+								</div>
+				    		</div>
+				    		<!-- Keystore col 1-3 -->
+				    		<div class="col-lg-2  border-bottom">
+				    			<label class="el-checkbox el-checkbox">
+									  <span class="margin-r"></span>
+									  <input type="checkbox" id="keystore_driver_checkbox1" checked>
+									  <span class="el-checkbox-style"></span>
+									</label>
+				    		</div>
+
+				    	</div>
+				    	<!--Keystore fila 2 -->
+				    	<div class="row pt-5">
+				    		<!-- Keystore col 2-1 -->
+				    		<div class="col-lg-5 border-bottom pb-3">	
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Windows CryptoAPI Keystore [WIN-ENH]</span>
+								  	<input type="checkbox" id="keystore_name_checkbox2" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>
+				    		</div>
+				    		<!-- Keystore col 2-2 -->
+				    		<div class="col-lg-3 border-bottom">
+				    			<div class="dropdown">
+								  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="keysotre_dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Dropdown
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="keysotre_dropdown1">
+								    <button class="dropdown-item" type="button">Action</button>
+								    <button class="dropdown-item" type="button">Another action</button>
+								    <button class="dropdown-item" type="button">Something else here</button>
+								  </div>
+								</div>
+				    		</div>
+				    		<!-- Keystore col 2-3 -->
+				    		<div class="col-lg-2  border-bottom">
+				    			<label class="el-checkbox el-checkbox">
+									  <span class="margin-r"></span>
+									  <input type="checkbox" id="keystore_driver_checkbox2" checked>
+									  <span class="el-checkbox-style"></span>
+									</label>
+				    		</div>
+
+				    	</div>
+				    	<!--Keystore fila 3 -->
+				    	<div class="row pt-5">
+				    		<!-- Keystore col 3-1 -->
+				    		<div class="col-lg-5 border-bottom pb-3">		
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Windows CryptoAPI Keystore [WIN-ENH]</span>
+								  	<input type="checkbox" id="keystore_name_checkbox3" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>
+				    		</div>
+				    		<!-- Keystore col 3-2 -->
+				    		<div class="col-lg-3 border-bottom">
+				    			<div class="dropdown">
+								  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="keysotre_dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Dropdown
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="keysotre_dropdown1">
+								    <button class="dropdown-item" type="button">Action</button>
+								    <button class="dropdown-item" type="button">Another action</button>
+								    <button class="dropdown-item" type="button">Something else here</button>
+								  </div>
+								</div>
+				    		</div>
+				    		<!-- Keystore col 3-3 -->
+				    		<div class="col-lg-2  border-bottom">
+				    			<label class="el-checkbox el-checkbox">
+									  <span class="margin-r"></span>
+									  <input type="checkbox" id="keystore_driver_checkbox3" checked>
+									  <span class="el-checkbox-style"></span>
+									</label>
+				    		</div>
+				    	</div>
+				  	</div>
+				  	<!-- End keystore scrolleable div -->
+		  			<div class="col-xs-12" style="height:500px;"></div> <!-- blank space -->
+				</section>
+				<!-- End keystore content -->
+
+				<!-- Start connection title -->
+	    		<section class="py-3" id="connection_title">
+	    			<div class="container">
+	    				<div class="row">
+	    					<div class="col-lg-9">
+	    						<h1 class="font-weight-bold mb-0">Connections</h1>
+	    						<p class="lead text-muted border-bottom border-primary">Set and configure ports and license control</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</section>
+	    		<!-- End connection title -->
+
+	    		<!-- Start connection content -->
+				<section>
+		    		<div class="container">
+				    	<!-- Conection fila 1 -->
+					    <div class="row pt-5">
+					    	<!-- Connection col 1-1 -->
+					    	<div class="col-lg-6 border-bottom">
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Standard connection</span>
+								  	<input type="checkbox" id="connection_checkbox1" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>   	
+					    	</div>
+					    	<!-- Connection col 1-2 -->
+					    	<div class="col-lg-2 border-bottom">
+		    					<label class="el-switch el-switch-sm pull-right">
+	  								<input type="checkbox" id="connection_switch1">
+	  								<span class="el-switch-style pull-left"></span>
+								</label>
+					    	</div>
+					   </div>
+
+						<!-- Connection fila 2 -->
+					   <div class="row pt-5">
+					    	<!-- Connection col 2-1 -->
+					    	<div class="col-lg-6 border-bottom pt-1">
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Alternative connection</span>
+								  	<input type="checkbox" id="connection_checkbox2" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>   	
+					    	</div>
+					    	<!-- Connection col 2-2 -->
+					    	<div class="col-lg-2 border-bottom">
+		    					<div class="input-group mb-3">
+								  <div class="input-group-prepend">
+								    <span class="input-group-text">Port</span>
+								  </div>
+								  <input id="connection_input2" type="text" class="form-control">
+								</div>
+					  		</div>
+					  	</div>
+
+						<!-- Connection fila 3 -->
+					   <div class="row pt-5">
+					   		<!-- Connection col 3-1 -->
+					    	<div class="col-lg-6 border-bottom pt-1">
+			    				<label class="el-checkbox el-checkbox ">
+									<span class="margin-r pl-2"> Connection by Plugin</span>
+								  	<input type="checkbox" id="connection_checkbox3" checked >
+								  	<span class="el-checkbox-style pull-left"></span>
+								</label>   	
+					    	</div>
+					    	<!-- Connection col 3-2 -->
+					    	<div class="col-lg-2 border-bottom">
+		    					<div class="input-group mb-3">
+								  <div class="input-group-prepend">
+								    <span class="input-group-text">Port</span>
+								  </div>
+								  <input id="connection_input3" type="text" class="form-control">
+								</div>
+					    	</div>
+					   </div>
+
+					   <!-- Connection fila 4 -->
+					   	<div class="row pt-5">
+					   		<!-- Connection col 4-1 -->
+					    	<div class="col-lg-6 pt-1">
+			    				License control	
+					    	</div>
+					    	<!-- Connection col 4-2 -->
+					    	<div class="col-lg-2">
+		    					<div class="dropdown pull-right">
+									<button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="connection_dropdown4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Dropdown
+									</button>
+									 <div class="dropdown-menu" aria-labelledby="connection_dropdown4">
+									    <button class="dropdown-item" type="button">Action</button>
+									    <button class="dropdown-item" type="button">Another action</button>
+									    <button class="dropdown-item" type="button">Something else here</button>
+									</div>
+								</div>
+					    	</div>
+					   	</div>
+					</div>
+					<div class="col-xs-12" style="height:500px;"></div> <!-- blank space -->
+				</section>
+				<!-- End connection content -->
 	    	</div>
+	    	<!-- End content -->
 	    </div>
+	   	<!-- w-100 -->
 	</div>
+	<!-- End wrapper -->
+
+	
+	<script type="text/javascript">
+		     var jsConnector = {
+              	// Setea la config
+            	setConfig: function (config) {
+        			var obj = JSON.parse(config);
+    				
+                	//var config_obj JSON.parse("hola");
+                	document.getElementById('enable_title').innerHTML = obj.enable_title;
+                	document.getElementById('enable_buton1').checked = obj.enable_buton1;
+                	document.getElementById('keystore_title').innerHTML = obj.keystore_title;
+
+             	}
+            };
+    
+            function getJsConnector() {
+                return jsConnector;
+            };
+
+
+	</script>
+
 </body>
 
 

@@ -2,8 +2,10 @@
 /* Dashboard color */
 :root {
     --primary: #111B54;
-    --light: #ffffff;
-    --grey: #efefef;
+}
+
+.conttainer{
+    background: red !important;
 }
 
 .my-conteiner{
@@ -17,6 +19,20 @@
 .my-col{
     border: 3px solid blue
 }
+
+
+/* Dropdwn primary buton boostrap color */
+.btn-primary {
+  color: #fff !important;
+  background-color: #111B54 !important;
+  border-color: #111B54 !important;
+}
+
+/* Border primary boostrap color */
+.border-primary {
+  border-color: #111B54 !important;
+}
+
 
 
 body {
@@ -33,20 +49,6 @@ a:hover {
 
 .bg-primary { background-color: var(--primary) !important; }
 
-.bg-light { background-color: var(--light) !important; }
-
-.bg-grey { background-color: var(--grey) !important; }
-
-.bg-mix { background: linear-gradient(180deg, var(--light) 50%, var(--grey) 0); }
-
-.btn-primary {
-    background-color: var(--primary);
-    border: 0;
-}
-
-.btn-primary:hover {
-    background-color: var(--primary);
-}
 
 #sidebar-container {
     min-height: 100vh;
@@ -60,10 +62,12 @@ a:hover {
     width: 18rem;
 }
 
+
 #content {
-    overflow-y: hidden;
+    overflow-y: hidden; 
     height: 100vh;
     padding-bottom: 5rem;
+    background: #f0f0f0;
 }
 
 
