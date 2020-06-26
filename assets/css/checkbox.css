@@ -4,6 +4,14 @@
  * lincense:MIT
  */
 /*checkbox radio component*/
+
+:root {
+    --primary: #262626;
+    --secundary: #008ae6;
+
+    --backgroundC: #f0f0f0;
+}
+
 .el-radio,
 .el-checkbox {
   position: relative;
@@ -118,12 +126,12 @@ label.el-checkbox {
   border-bottom: 2px solid #fff;
 }
 .el-checkbox > input[type="checkbox"]:checked + .el-checkbox-style:before {
-  border: #111B54;
-  background: #111B54;
+  border: var(--secundary);
+  background: var(--secundary);
 }
 .el-checkbox > input[type="checkbox"]:checked[disabled] + .el-checkbox-style:before {
-  border: #111B54;
-  background: #111B54;
+  border: var(--secundary);
+  background: var(--secundary);
 }
 /*blue theme*/
 .el-radio.el-radio-blue > input[type="radio"] + label:hover:before,
@@ -267,7 +275,7 @@ label.el-checkbox {
   background-color: #D3DCE6;
 }
 .el-switch > input[type="checkbox"]:checked + .el-switch-style {
-  background-color: #111B54;
+  background-color: var(--secundary);
 }
 .el-switch > input[type="checkbox"]:checked + .el-switch-style:before {
   left: 50%;

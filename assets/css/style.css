@@ -1,8 +1,13 @@
 
-/* Dashboard color */
+/* General color */
 :root {
-    --primary: #111B54;
+    --primary: #262626;
+    --secundary: #008ae6;
+
+    --backgroundC: #f0f0f0;
 }
+
+
 
 .conttainer{
     background: red !important;
@@ -24,13 +29,13 @@
 /* Dropdwn primary buton boostrap color */
 .btn-primary {
   color: #fff !important;
-  background-color: #111B54 !important;
-  border-color: #111B54 !important;
+  background-color: var(--secundary) !important;
+  border-color: var(--secundary) !important;
 }
 
 /* Border primary boostrap color */
 .border-primary {
-  border-color: #111B54 !important;
+  border-color: var(--secundary) !important;
 }
 
 
@@ -59,15 +64,16 @@ a:hover {
 }
   
 #sidebar-container .menu {
-    width: 18rem;
+    width: 22rem;
 }
 
 
 #content {
+    overflow-x: hidden;
     overflow-y: hidden; 
     height: 100vh;
     padding-bottom: 5rem;
-    background: #f0f0f0;
+    background: var(--backgroundC);
 }
 
 
