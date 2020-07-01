@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <p>Enter ${greetings} names in the fields, then click "${inquiry}" to submit the ${farwell}!:</p>
+
+    <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        Alternative connection: <input type="checkbox" id="alternativeConnection"><br>  
+    </form> 
+    <br><br>
+    <main>
+      <a href="re.html" id="re"> redireccion</a><br><br><br><br>
+      <input type="button" onclick="sendToJava();" value="Save"><br>
+      <div id="result"></div>
+    </main>
+
+    <script>
+      var el = document.getElementById('re');
+      re.onclick = showFoo;
+
+      function showFoo() {
+        document.getElementById('result').innerHTML = "HOLA";
+        return false;
+
+      }
+    </script>
+
+    <script type="text/javascript">
+      function sendToJava () {
+                var frm1_param = document.getElementById("frm1");
+                document.getElementById('result').innerHTML = frm1[0].value;
+                javaConnector.toLowerCase(frm1[0].value);
+        };
+    
+            var jsConnector = {
+              showResult: function (result) {
+                document.getElementById('result').innerHTML = result;
+                }
+            };
+    
+            function getJsConnector() {
+                return jsConnector;
+            };
+        </script>
+  </body>
+</html>

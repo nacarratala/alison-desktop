@@ -1,0 +1,47 @@
+{
+  "version":1,
+  "manifestVersion":"https://s3.amazonaws.com/downloads.certisur.net/installers/alisondesktop.json",
+  "preferences": {
+    "company":"certisur",
+    "dontShowIntegrationWindowUntil":1589840094021,
+    "enabledSites":[
+      {
+        "type":"B",
+        "host":"127.0.0.1",
+        "port":8004,
+        "enable":true
+      },
+      {
+        "type":"C",
+        "host":"127.0.0.1",
+        "port":8005,
+        "enable":true
+      },
+      {
+        "type":"A",
+        "host":"127.0.0.1",
+        "port":8003,
+        "enable":true
+      },
+    ],
+    "licenseControl":"none",
+    "disableCertFilter":false,
+    "language":"en",
+    "integrationMode":3,
+    "dupFilter":"*>ETOKEN>CSK>PKCS11>WIN-ENH>WIN>MACOS>FF-NSS>PFX>",
+    "enableTrayMsg":true,
+    "hideDuplicatedCerts":true
+  },
+  "log": {
+    "additivity.default":false,
+    "appender.default.layout.ConversionPattern":"[%-5p] %d{yyyy-MM-dd HH:mm:ss} [%C{1}] %.100000m%n",
+    "appender.default":"org.apache.log4j.RollingFileAppender",
+    "appender.default.File.MaxFileSize":"1MB",
+    "appender.default.File.MaxBackupIndex":7,
+    "rootLogger":"OFF",
+    "category.default":"DEBUG, default",
+    "appender.default.File":"/Users/acarrata/.alison-desktop/log/default.log",
+    "appender.default.layout":"org.apache.log4j.PatternLayout"
+  }
+}
+
